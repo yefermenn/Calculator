@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="viewport">
+            <input type="text" value="0" id="output">
+        </div>
+        <div id="other">
+            <button onclick="presionar(17)">CE</button>
+            <button onclick="presionar(18)">C</button>
+        </div>
+        <div id="keyboard">
+            <div id="numbers">
+                <button onclick="presionar(1,'1')">1</button>
+                <button onclick="presionar(2,'2')">2</button>
+                <button onclick="presionar(3,'3')">3</button>
+                <button onclick="presionar(4,'4')">4</button>
+                <button onclick="presionar(5,'5')">5</button>
+                <button onclick="presionar(6,'6')">6</button>
+                <button onclick="presionar(7,'7')">7</button>
+                <button onclick="presionar(8,'8')">8</button>
+                <button onclick="presionar(9,'9')">9</button>
+                <button onclick="presionar(0,'0')">0</button>
+                <button onclick="presionar(11,'.')">.</button>
+                <button onclick="presionar(12)">=</button>
+            </div>
+            <div id="operators">
+                <button onclick="presionar(13)">+</button>
+                <button onclick="presionar(14)">-</button>
+                <button onclick="presionar(15)">x</button>
+                <button onclick="presionar(16)">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

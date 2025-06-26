@@ -1,0 +1,107 @@
+body{
+    display:flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    border-style: solid;
+    border-color: rgb(43, 43, 43);
+    border-radius: 12px;
+    height: 90%;
+    width: 400px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+#viewport{
+    height: 15%;
+    background-color:rgb(70, 70, 70);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    display: flex;
+}
+#viewport input{
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    font-size: 32px;
+    text-align: right;
+}
+#other{
+    height: 13%;
+    padding: 2%;
+    width: 96.1%;
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    gap: 2%;
+    justify-content: end;
+}
+#other button{
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-size: 32px;
+    user-select: none;
+    height: 100%;
+    width: 25%;
+}
+#keyboard{
+    height:72%;
+    background-color: rgb(85, 85, 85);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    display: flex;
+}
+#numbers{
+    height: 100%;
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+    padding:10px;
+}
+#numbers button{
+    width: 30%;
+    height: 22%;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-size: 32px;
+    user-select: none;
+}
+#operators{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5%;
+    gap: 2.5%;
+}
+#operators button{
+    width: 80%;
+    height: 22.1%;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-size: 32px;
+    user-select: none;
+}
+#operators button:hover,
+#numbers button:hover,
+#other button:hover{
+    background-color: rgb(94, 94, 94);
+}
+#operators button:active,
+#numbers button:active,
+#other button:active{
+    background-color: rgb(121, 121, 121);
+}
